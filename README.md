@@ -15,7 +15,7 @@
             a ∆ix solo project
             
             ### License
-            [![License: MIT][https://img.shields.io/github/license/agassiot/notefy?style=plastic](https://github.com/agassiot/notefy)
+            [![License][https://img.shields.io/github/license/agassiot/notefy?style=plastic](https://github.com/agassiot/notefy)
             
             ### Features
               Notes are saved to a JSON file, acting a small 'database.' Click the save icon to save a new note, click the trash bin beside saved notes to               delete them
