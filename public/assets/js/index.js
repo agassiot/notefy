@@ -70,7 +70,7 @@ const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
-    id: `${this.title+Date.now()}`,
+    id: `${this.title}${Date.now()}`,
   };
   console.log(newNote)
   saveNote(newNote).then(() => {
