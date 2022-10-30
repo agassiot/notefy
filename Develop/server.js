@@ -9,7 +9,7 @@ import { fileURLToPath } from "url"
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
 const app = express();
 
@@ -57,5 +57,5 @@ app.post("/notes", (req, res) => {
 
 
     app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
+  console.log(`App listening at deployed to heroku 🚀`)
 );
