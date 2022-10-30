@@ -67,12 +67,13 @@ const renderActiveNote = () => {
 };
 
 const handleNoteSave = () => {
+  let code = Date.now();
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
-    id: `${this.title}${Date.now()}`,
+    id: `${this.title}${code}`,
   };
-  console.log(newNote)
+  console.log('\n new note',newNote,'\n new datecode', code);
   saveNote(newNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();
