@@ -42,14 +42,17 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
-const deleteNote = (id) =>
+const deleteNote = (id) =>{
+  
   fetch(`/notes`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(id),
-  });
+  })
+  console.log('/n note id at index delete', id)
+}
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
@@ -88,7 +91,7 @@ const handleNoteDelete = (e) => {
 
   const note = e.target;
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
-
+  console.log( '/n note id at event handler',noteId)
   if (activeNote.id === noteId) {
     activeNote = {};
   }
