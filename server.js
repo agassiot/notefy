@@ -32,7 +32,9 @@ app.route('/notes')                                             //get
 
 .put(async (req,res)=>{
     let removeNote = {
-        id: req.body
+        title: req.body.title,
+        text: req.body.text,
+        id: req.body.id
     }
     console.log('\n log for delete request', req.body)
       await deleteNote("../db/db.json",removeNote);

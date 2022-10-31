@@ -90,10 +90,15 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
+  const parsenote = JSON.parse(note.parentElement.getAttribute('data-note'));
   console.log( '/n note id at event handler',noteId)
   if (activeNote.id === noteId) {
     activeNote = {};
+  }
+  let noteId = {
+    title: parsenote.title,
+    text: parsenote.text,
+    id: parsenote.id,
   }
 
   deleteNote(noteId)
