@@ -91,7 +91,6 @@ const handleNoteDelete = (e) => {
 
   const note = e.target;
   const parsenote = JSON.parse(note.parentElement.getAttribute('data-note'));
-  console.log( '/n note id at event handler',noteId)
   if (activeNote.id === noteId) {
     activeNote = {};
   }
@@ -100,7 +99,8 @@ const handleNoteDelete = (e) => {
     text: parsenote.text,
     id: parsenote.id,
   }
-
+  console.log( '/n note id at event handler',noteId)
+  
   deleteNote(noteId)
   setTimeout(()=>{
     getAndRenderNotes();
