@@ -67,11 +67,11 @@ const renderActiveNote = () => {
 };
 
 const handleNoteSave = () => {
-  let code = Date.now();
+  let code = `${Date.now()}`.slice(5);
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
-    id: `${code}`,
+    id: code,
   };
   console.log('\n new note',newNote,'\n new datecode', code);
   saveNote(newNote).then(() => {
