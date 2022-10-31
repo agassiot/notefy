@@ -105,7 +105,7 @@ const handleNoteDelete = (e) => {
   setTimeout(()=>{
     getAndRenderNotes();
     renderActiveNote();
-  },1000)
+  },3000)
   
 };
 
