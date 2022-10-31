@@ -43,15 +43,15 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>{
+  console.log('/n note id at index delete', id)
   
-  fetch(`/notes`, {
+  return fetch(`/notes`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(id),
   })
-  console.log('/n note id at index delete', id)
 }
 
 const renderActiveNote = () => {

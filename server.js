@@ -42,7 +42,7 @@ app.route('/notes')                                             //get
         status: "sucess",
         body: removeNote,
     }
-    return res.json(JSON.parse(removeNote))
+    return res.json(response)
 })
 
 .post((req, res)=> {                                            //post
