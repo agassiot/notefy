@@ -30,7 +30,7 @@ app.route('/notes')                                             //get
     res.sendFile(path.join(__dirname,'./public/notes.html'))
 })
 
-.delete(async (req,res)=>{
+.put(async (req,res)=>{
     let removeNote = {
         id: req.body
     }
