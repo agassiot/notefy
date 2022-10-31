@@ -1,5 +1,5 @@
 
-import { getNote, saveNote, deleteNote } from "./helpers/filesUtil.js"
+import { getNote, saveNote, saveafterDel } from "./helpers/filesUtil.js"
 import path from 'path'
 
 import express from 'express'
@@ -30,20 +30,6 @@ app.route('/notes')                                             //get
     res.sendFile(path.join(__dirname,'./public/notes.html'))
 })
 
-.put( (req,res)=>{
-    let removeNote = {
-        title: req.body.title,
-        text: req.body.text,
-        id: req.body.id
-    }
-    console.log('\n log for delete request', req.body)
-      await deleteNote("../db/db.json",removeNote);
-    const response = {
-        status: "sucess",
-        body: removeNote,
-    }
-    return res.json(response)
-})
 
 .post((req, res)=> {                                            //post
     let newNote = {
@@ -69,6 +55,16 @@ app.route('/api/notes')
 })
 
 
+app.delete("/api/notes/:id", function (req, res) {
+
+    let data = getNote("../db/db.json");
+    let newData = data.filter(note=>note.id !==req.params.id);
+    saveafterDel("../db/db.json",newData);
+
+    
+    res.json(`Note deleted successfully 🚀`);
+
+});
 
 
 

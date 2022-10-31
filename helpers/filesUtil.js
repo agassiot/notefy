@@ -24,23 +24,11 @@ export async function saveNote(file, freshNote) {
   )
 }
 
-export async function deleteNote(file,staleNote) {
- let dbnotes = await getNote(file);
- let savedNotes = JSON.parse(dbnotes);
-  
-  for (let key in savedNotes){
-    console.log('\n keys in database',key)
-    console.log('\n key ids',key.id)
-    if(key.id == staleNote.id){
-      let redact = savedNotes.indexOf(key);
-      console.log('\n redact index',redact)
-      let updatedNotes = savedNotes.splice(redact,1);
-      console.log('/n updated notes',updatedNotes)
-    await writeFile(path.join(__dirname,file), JSON.stringify(updatedNotes), 
-    (err) => err ? console.error(err) : console.info(`\n written to ${file}`)
+export async function saveafterDel(file,noteRemoved) {
 
-    )}
-  }
+  await writeFile(path.join(__dirname,file),JSON.stringify(noteRemoved), (err) =>
+  err ? console.error(err) : console.info(`\n written to ${file}`)
+  )
 }
 
 
