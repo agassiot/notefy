@@ -55,7 +55,7 @@ app.route('/api/notes')
 })
 
 
-app.delete("/api/notes/:id", function (req, res) {
+app.delete("/notes/:id", function (req, res) {
 
     let data = getNote("../db/db.json");
     let newData = data.filter(note=>note.id !==req.params.id);
