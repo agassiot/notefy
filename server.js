@@ -71,6 +71,6 @@ app.route('/api/notes')
 
 
 
-    app.listen(PORT, () =>
-  console.log(`App listening at ${PORT}🚀`)
+app.listen(PORT, () =>
+console.log(`App listening at ${PORT}🚀`)
 );

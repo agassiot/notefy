@@ -43,7 +43,7 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>
-  fetch(`/api/notes/`, {
+  fetch(`/api/notes`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
