@@ -55,9 +55,9 @@ app.route('/api/notes')
 })
 
 
-app.delete("/notes/:id", function (req, res) {
+app.delete("/notes/:id", async (req, res)=> {
     console.log(req.params.id)
-    let data = getNote("../db/db.json");
+    let data = await getNote("../db/db.json");
     let newData = data.filter(note=>note.id !==req.params.id);
     console.log('\n log from controller',newData)
     saveafterDel("../db/db.json",newData);
