@@ -86,10 +86,10 @@ const handleNoteDelete = (e) => {
   e.stoppropagation();
 
   const note = e.target;
-  const noteid = json.parse(note.parentelement.getattribute('data-note')).id;
+  const noteid = json.parse(note.parentElement.getAttribute('data-note')).id;
 
-  if (activenote.id === noteid) {
-    activenote = {};
+  if (activeNote.id === noteid) {
+    activeNote = {};
   }
 
   deleteNote(noteid).then(() => {
