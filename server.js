@@ -35,12 +35,12 @@ app.route('/notes')                                             //get
         id: req.body
     }
     console.log('\n log for delete request', req.body)
-     deleteNote("../db/db.json",removeNote);
+      await deleteNote("../db/db.json",removeNote);
     const response = {
         status: "sucess",
         body: removeNote,
     }
-    res.json(response)
+    return res.json(JSON.parse(removeNote))
 })
 
 .post((req, res)=> {                                            //post

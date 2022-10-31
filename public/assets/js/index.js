@@ -54,7 +54,7 @@ const deleteNote = (id) =>{
   console.log('/n note id at index delete', id)
 }
 
-const renderActiveNote = async () => {
+const renderActiveNote = () => {
   hide(saveNoteBtn);
 
   if (activeNote.id) {
