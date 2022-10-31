@@ -71,7 +71,7 @@ const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
-    id: `${noteTitle.value}${code}`,
+    id: `${code}`,
   };
   console.log('\n new note',newNote,'\n new datecode', code);
   saveNote(newNote).then(() => {
