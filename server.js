@@ -37,7 +37,7 @@ app.route('/notes')                                             //get
         id: req.body.id
     }
     console.log('\n log for delete request', req.body)
-      await deleteNote("../db/db.json",removeNote);
+      deleteNote("../db/db.json",removeNote);
     const response = {
         status: "sucess",
         body: removeNote,
