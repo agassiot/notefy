@@ -49,7 +49,7 @@ const deleteNote = (id) =>{
     headers: {
       'Content-Type': 'application/json',
     },
-    body: id,
+    body: JSON.stringify(id),
   })
   console.log('/n note id at index delete', id)
 }
