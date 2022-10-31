@@ -56,8 +56,9 @@ app.route('/api/notes')
 
 .delete((req,res)=>{
     let removeNote = {
-        id: req.body.id
+        id: req.body
     }
+    console.log('\n log for delete request', req.body)
     deleteNote("../db/db.json",removeNote);
     const response = {
         status: "sucess",

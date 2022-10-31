@@ -29,7 +29,7 @@ export async function deleteNote(file,staleNote) {
  let savedNotes = JSON.parse(dbnotes);
   
   for (let key in savedNotes){
-    if(key.id == staleNote.id){
+    if(key.id == staleNote){
       let redact = savedNotes.indexOf(key);
       historyL.insertAdjacentHTML('afterbegin',btnL);
       let updatedNotes = savedNotes.splice(redact,1);
