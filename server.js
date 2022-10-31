@@ -30,6 +30,18 @@ app.route('/notes')                                             //get
     res.sendFile(path.join(__dirname,'./public/notes.html'))
 })
 
+.delete(async (req,res)=>{
+    let removeNote = {
+        id: req.body
+    }
+    console.log('\n log for delete request', req.body)
+    await deleteNote("../db/db.json",removeNote);
+    const response = {
+        status: "sucess",
+        body: removeNote,
+    }
+    res.json(response)
+})
 
 .post((req, res)=> {                                            //post
     let newNote = {
@@ -54,18 +66,6 @@ app.route('/api/notes')
     return res.json(JSON.parse(data))
 })
 
-.delete(async (req,res)=>{
-    let removeNote = {
-        id: req.body
-    }
-    console.log('\n log for delete request', req.body)
-    await deleteNote("../db/db.json",removeNote);
-    const response = {
-        status: "sucess",
-        body: removeNote,
-    }
-    res.json(response)
-})
 
 
 
