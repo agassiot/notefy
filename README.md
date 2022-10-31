@@ -28,4 +28,8 @@
             Github Repository https://github.com/agassiot/notefy
             Live Link https://deltaix-notefy.herokuapp.com/
             
-            [Untitled_ Oct 31, 2022 10_32 AM.webm](https://user-images.githubusercontent.com/61921580/199047377-4b79cd50-90a4-4f7c-b549-306dbfcbb69c.webm)
+            
+
+    https://user-images.githubusercontent.com/61921580/199047699-dfe2380a-c21d-4aa7-b883-d0b52112bb7c.mp4
+
+
