@@ -29,10 +29,13 @@ export async function deleteNote(file,staleNote) {
  let savedNotes = JSON.parse(dbnotes);
   
   for (let key in savedNotes){
+    console.log('\n keys in database',key)
+    console.log('\n key ids',key.id)
     if(key.id == staleNote){
       let redact = savedNotes.indexOf(key);
-      historyL.insertAdjacentHTML('afterbegin',btnL);
+      console.log('\n redact index',redact)
       let updatedNotes = savedNotes.splice(redact,1);
+      console.log('/n updated notes',updatedNotes)
     await writeFile(path.join(__dirname,file), JSON.stringify(updatedNotes), 
     (err) => err ? console.error(err) : console.info(`\n written to ${file}`)
 
