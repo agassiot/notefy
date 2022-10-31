@@ -14,13 +14,30 @@ export async function getNote(file) {
 } 
 
 
-export async function saveNote(file, content) {
+export async function saveNote(file, freshNote) {
     let oldNote= await getNote(file);
     let parsedNote = JSON.parse(oldNote);
-    parsedNote.push(content);
+    parsedNote.push(freshNote);
     console.log('\n old note',oldNote,'\n parse old',parsedNote);
   await writeFile(path.join(__dirname,file), JSON.stringify(parsedNote), (err) =>
     err ? console.error(err) : console.info(`\n written to ${file}`)
   )
 }
+
+export async function deleteNote(file,staleNote) {
+ let dbnotes = await getNote(file);
+ let savedNotes = JSON.parse(dbnotes);
+  
+  for (let key in savedNotes){
+    if(key.id == staleNote.id){
+      let redact = savedNotes.indexOf(key);
+      historyL.insertAdjacentHTML('afterbegin',btnL);
+      let updatedNotes = savedNotes.splice(redact,1);
+    await writeFile(path.join(__dirname,file), JSON.stringify(updatedNotes), 
+    (err) => err ? console.error(err) : console.info(`\n written to ${file}`)
+
+    )}
+  }
+}
+
 

@@ -1,6 +1,5 @@
 
-import { Router } from "express"
-import { getNote, saveNote } from "./helpers/filesUtil.js"
+import { getNote, saveNote, deleteNote } from "./helpers/filesUtil.js"
 import path from 'path'
 
 import express from 'express'
@@ -24,19 +23,15 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname,'/public/index.html'))
 );
 
-app.get('/notes', (req, res) =>
-res.sendFile(path.join(__dirname,'./public/notes.html'))
-);
 
-
-
-
-app.get("/api/notes", async (req,res) => {
-    let data = await getNote("../db/db.json");
-    return res.json(JSON.parse(data))
+//reg paths
+app.route('/notes')                                             //get
+.get((req, res)=> {
+    res.sendFile(path.join(__dirname,'./public/notes.html'))
 })
 
-app.post("/notes", (req, res) => {
+
+.post((req, res)=> {                                            //post
     let newNote = {
         title: req.body.title,
         text: req.body.text,
@@ -48,11 +43,30 @@ app.post("/notes", (req, res) => {
         status: "sucess",
         body: newNote,
     }
-    
-    
     res.json(response)
-    
 })
+
+//api routes
+app.route('/api/notes') 
+
+.get( async (req,res)=> {
+    let data = await getNote("../db/db.json");
+    return res.json(JSON.parse(data))
+})
+
+.delete((req,res)=>{
+    let removeNote = {
+        id: req.body.id
+    }
+    deleteNote("../db/db.json",removeNote);
+    const response = {
+        status: "sucess",
+        body: removeNote,
+    }
+    res.json(response)
+})
+
+
 
 
 
