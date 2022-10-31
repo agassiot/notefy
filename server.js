@@ -54,12 +54,12 @@ app.route('/api/notes')
     return res.json(JSON.parse(data))
 })
 
-.delete((req,res)=>{
+.delete(async (req,res)=>{
     let removeNote = {
         id: req.body
     }
     console.log('\n log for delete request', req.body)
-    deleteNote("../db/db.json",removeNote);
+    await deleteNote("../db/db.json",removeNote);
     const response = {
         status: "sucess",
         body: removeNote,
