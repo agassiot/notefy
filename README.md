@@ -39,7 +39,7 @@ a ∆ix solo project
             
 Notes are saved to a JSON file, acting a small 'database.' Click the save icon to save a new note, click the trash bin beside saved notes                 to delete them
               
-### Struggles
+## Struggles
             
 'Either you karate do "yes", or karate do "no"'
             
