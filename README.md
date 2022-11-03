@@ -1,5 +1,5 @@
- <h1 align="center"> Notefy </h1>  
- <p align="center">
+ <h1 align="left"> Notefy </h1>  
+ <p align="right">
   <a href="https://github.com/agassiot/notefy/blob/main/LICENSE.md">
         <img alt="License: MIT" src="https://img.shields.io/github/license/agassiot/notefy?style=plastic" target="_blank"/>
     </a>
