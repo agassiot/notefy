@@ -5,38 +5,47 @@
     </a>
 </p>
 
-            ## ###########################
 
-            ## Description
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Description](#description)
+- [Installation](#installation)
+- [Use](#use)
+- [Credits](#credits)
+- [Features](#features)
+- [Struggles](#struggles)
+- [Links](#links)
+
+
+## Description
             
-              Track and save your thoughts
+Track and save your thoughts
             
-            ## Installation
+## Installation
             
-              n/a
+n/a
             
-            ## Use
+## Use
             
-              Organization & Productivity
+Organization & Productivity
             
-            ## Credits
+## Credits
             
-            a ∆ix solo project
+a ∆ix solo project
+                     
+## Features
             
-         
-            ## Features
-            
-              Notes are saved to a JSON file, acting a small 'database.' Click the save icon to save a new note, click the trash bin beside saved notes                 to delete them
+Notes are saved to a JSON file, acting a small 'database.' Click the save icon to save a new note, click the trash bin beside saved notes                 to delete them
               
-            ### Struggles
+### Struggles
             
-            'Either you karate do "yes", or karate do "no"'
+'Either you karate do "yes", or karate do "no"'
             
-            ## Links
+## Links
             
-            Github Page https://github.com/agassiot
-            Github Repository https://github.com/agassiot/notefy
-            Live Link https://deltaix-notefy.herokuapp.com/
+Github Page https://github.com/agassiot
+Github Repository https://github.com/agassiot/notefy
+Live Link https://deltaix-notefy.herokuapp.com/
             
           
 
