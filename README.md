@@ -5,6 +5,8 @@
     </a>
  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E" target="_blank"/>
  <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=plastic&logo=heroku&logoColor=white" target="_blank"/>
+ <img src="https://img.shields.io/badge/node.js-6DA55F?style=plastic&logo=node.js&logoColor=white" />
+ <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=plastic&logo=express&logoColor=%2361DAFB" />
 </p>
 
 
@@ -33,7 +35,7 @@ Organization & Productivity
             
 ## Credits
             
-a ∆ix solo project
+a <span style="color:mediumspringgreen">∆ix</span> solo project
                      
 ## Features
             
