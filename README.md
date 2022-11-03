@@ -1,8 +1,10 @@
  <h1 align="center"> Notefy </h1>  
  <p align="center">
   <a href="https://github.com/agassiot/notefy/blob/main/LICENSE.md">
-        <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+        <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank"/>
     </a>
+ <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" target="_blank"/>
+ <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white" target="_blank"/>
 </p>
 
 
