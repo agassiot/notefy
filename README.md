@@ -47,9 +47,9 @@ Notes are saved to a JSON file, acting a small 'database.' Click the save icon t
             
 ## Links
             
-Github Page https://github.com/agassiot
-Github Repository https://github.com/agassiot/notefy
-Live Link https://deltaix-notefy.herokuapp.com/
+Github Page https://github.com/agassiot \
+Github Repository https://github.com/agassiot/notefy \
+Live Link https://deltaix-notefy.herokuapp.com/ 
             
           
 
