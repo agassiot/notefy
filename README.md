@@ -1,27 +1,32 @@
-  ## Notefy
+ <h1 align="center"> Notefy </h1>  
+ <p align="center">
+  <a href="https://github.com/agassiot/notefy/blob/main/LICENSE.md">
+        <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+    </a>
+</p>
 
             ## ###########################
 
             ## Description
               Track and save your thoughts
             
-            ### Installation
+            ## Installation
               n/a
             
-            ### Use
+            ## Use
               Organization & Productivity
             
-            ### Credits
+            ## Credits
             a ∆ix solo project
             
          
-            ### Features
+            ## Features
               Notes are saved to a JSON file, acting a small 'database.' Click the save icon to save a new note, click the trash bin beside saved notes                 to delete them
               
-            #### Struggles
+            ### Struggles
             'Either you karate do "yes", or karate do "no"'
             
-            ### Links
+            ## Links
             Github Page https://github.com/agassiot
             Github Repository https://github.com/agassiot/notefy
             Live Link https://deltaix-notefy.herokuapp.com/
