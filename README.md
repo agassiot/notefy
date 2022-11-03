@@ -35,7 +35,7 @@ Organization & Productivity
             
 ## Credits
             
-a <span style="color:red">∆ix</span> solo project
+a ∆ix solo project
                      
 ## Features
             
